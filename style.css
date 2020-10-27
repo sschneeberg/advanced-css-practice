@@ -15,6 +15,10 @@
     margin-top: 10px;
 }
 
+.dropdown {
+    margin: 10px;
+}
+
 .container:hover,
 .container2:hover {
     color: darkgrey;
