@@ -1,0 +1,79 @@
+.container {
+    height: 300px;
+    width: 300px;
+    background: whitesmoke;
+    margin: 0 auto;
+    border: 1px solid transparent;
+}
+
+.container2 {
+    width: 300px;
+    height: 100px;
+    background: rosybrown;
+    margin: 0 auto;
+    border: 1px solid transparent;
+    margin-top: 10px;
+}
+
+.container:hover,
+.container2:hover {
+    color: darkgrey;
+    border: 1px solid slategray;
+    cursor: pointer;
+}
+
+@media(max-width: 600px) {
+    .container {
+        background: rgb(230, 150, 223);
+        width: 55vw;
+        transform: rotate(15deg);
+        color: gold;
+        border: 3px solid transparent;
+    }
+    .container2 {
+        background-color: rgb(117, 218, 104);
+        width: 55vw;
+        transform: rotate(-15deg);
+        z-index: 1;
+        color: white;
+        border: 3px solid transparent;
+    }
+    .container:hover,
+    .container2:hover {
+        color: mediumvioletred;
+        border: 3px dotted white;
+        cursor: pointer;
+    }
+}
+
+@media(max-width: 250px) {
+    .container,
+    .container2 {
+        font-size: 0.5em;
+        border: darkturquoise 1px dotted;
+    }
+}
+
+@media screen and (min-width: 800px) and (max-width:1000px) {
+    .container {
+        background: rgb(230, 150, 223);
+        width: 55vw;
+        transform: rotate(-15deg);
+        color: gold;
+        z-index: 1;
+        border: 3px solid transparent;
+    }
+    .container2 {
+        background-color: rgb(117, 218, 104);
+        width: 55vw;
+        transform: rotate(15deg);
+        color: white;
+        border: 3px solid transparent;
+    }
+    .container:hover,
+    .container2:hover {
+        color: mediumvioletred;
+        border: 3px dotted white;
+        cursor: pointer;
+    }
+}
